@@ -1,0 +1,27 @@
+@function exponent($base, $exponent) {
+	$value: $base;
+
+	@if $exponent > 1 {
+		@for $i from 2 through $exponent {
+			$value: $value * $base;
+		}
+	}
+
+	@if $exponent < 1 {
+		@for $i from 0 through (-1 * $exponent) {
+			$value: $value / $base;
+		}
+	}
+
+	@return $value;
+}
+
+@function pow($base, $exponent) {
+	@return exponent($base, $exponent);
+}
+
+@mixin smaller($width: 767px) {
+	@media screen and (max-width: $width) {
+		@content;
+	}
+}

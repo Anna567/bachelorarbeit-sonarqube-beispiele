@@ -1,0 +1,75 @@
+{
+	"name": "2048",
+	"version": "1.0.0",
+	"description": "Join the numbers and get to the 2048 tile!",
+	"keywords": [
+		"2048",
+		"1024",
+		"JS Game",
+		"2048 Game",
+		"1024 Game",
+		"Tiles Game"
+	],
+	"homepage": "https://2048.atanas.info",
+	"bugs": {
+		"url": "https://github.com/scriptex/2048/issues",
+		"email": "hi@atanas.info"
+	},
+	"license": "MIT",
+	"author": "Atanas Atanasov <hi@atanas.info> (https://atanas.info)",
+	"funding": "https://github.com/sponsors/scriptex",
+	"repository": {
+		"type": "git",
+		"url": "github:scriptex/2048"
+	},
+	"nyc": {
+		"extension": [
+			".ts"
+		],
+		"include": [
+			"src/**/*.ts"
+		],
+		"exclude": [
+			"test/**/*.ts"
+		],
+		"reporter": [
+			"lcov",
+			"text"
+		],
+		"all": true
+	},
+	"scripts": {
+		"start": "parcel src/index.html",
+		"build": "parcel build src/index.html",
+		"test": "jest --coverage"
+	},
+	"dependencies": {
+		"hammerjs": "2.0.8",
+		"html-head-component": "1.2.1",
+		"scriptex-socials": "1.8.0"
+	},
+	"devDependencies": {
+		"@parcel/packager-raw-url": "2.13.3",
+		"@parcel/transformer-sass": "2.13.3",
+		"@parcel/transformer-typescript-tsc": "2.13.3",
+		"@parcel/transformer-webmanifest": "2.13.3",
+		"@types/hammerjs": "2.0.46",
+		"@types/jest": "^29.5.14",
+		"@types/mocha": "^10.0.10",
+		"@types/node": "^22.15.3",
+		"jest": "^29.7.0",
+		"jest-environment-jsdom": "^29.7.0",
+		"mocha": "^11.2.2",
+		"nyc": "^17.1.0",
+		"parcel": "2.13.3",
+		"parcel-reporter-static-files-copy": "1.5.3",
+		"ts-jest": "^29.3.2",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.8.2"
+	},
+	"private": true,
+	"browserslist": [
+		"> 1%",
+		"last 2 versions"
+	]
+}

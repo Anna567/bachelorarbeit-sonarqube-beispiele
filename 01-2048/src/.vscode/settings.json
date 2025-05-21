@@ -1,0 +1,6 @@
+{
+    "sonarlint.connectedMode.project": {
+        "connectionId": "http-localhost-9000",
+        "projectKey": "annaaschauer_game2048_ee35d6c6-e0c9-464a-a9fe-9ab00e90fd64"
+    }
+}

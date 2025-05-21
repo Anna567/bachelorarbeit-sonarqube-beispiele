@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+
+		<link rel="stylesheet" href="styles/main.scss" />
+
+		<link rel="manifest" href="../static/manifest.webmanifest" />
+
+		<script>
+			(function (d, h, m) {
+				var js,
+					fjs = d.getElementsByTagName(h)[0];
+				if (d.getElementById(m)) {
+					return;
+				}
+				js = d.createElement(h);
+				js.id = m;
+				js.onload = function () {
+					window.makerWidgetComInit({
+						position: 'left',
+						widget: 'egtvfprlpcdjg1i4-8syknhxgseddkfli-j45otk13qspl7fts'
+					});
+				};
+				js.src = 'https://makerwidget.com/js/embed.js';
+				fjs.parentNode.insertBefore(js, fjs);
+			})(document, 'script', 'dhm');
+		</script>
+	</head>
+	<body>
+		<html-head-component src="meta.json" hidden></html-head-component>
+
+		<div class="container">
+			<header class="header">
+				<div class="header__top">
+					<h1>2048</h1>
+
+					<div class="score current-score">0</div>
+					<div class="score best-score">0</div>
+				</div>
+
+				<div class="header__bottom">
+					<p>Join the numbers and get to the <strong>2048 tile</strong>!</p>
+
+					<button type="button" class="retry">Try again</button>
+				</div>
+			</header>
+
+			<div class="game">
+				<div class="message">
+					<p></p>
+
+					<div class="message__actions">
+						<button type="button" class="retry">Try again</button>
+					</div>
+				</div>
+
+				<div class="grid">
+					<div class="grid__row">
+						<div class="grid__cell"></div>
+						<div class="grid__cell"></div>
+						<div class="grid__cell"></div>
+						<div class="grid__cell"></div>
+					</div>
+
+					<div class="grid__row">
+						<div class="grid__cell"></div>
+						<div class="grid__cell"></div>
+						<div class="grid__cell"></div>
+						<div class="grid__cell"></div>
+					</div>
+
+					<div class="grid__row">
+						<div class="grid__cell"></div>
+						<div class="grid__cell"></div>
+						<div class="grid__cell"></div>
+						<div class="grid__cell"></div>
+					</div>
+
+					<div class="grid__row">
+						<div class="grid__cell"></div>
+						<div class="grid__cell"></div>
+						<div class="grid__cell"></div>
+						<div class="grid__cell"></div>
+					</div>
+				</div>
+
+				<div class="tiles"></div>
+			</div>
+
+			<social-links></social-links>
+		</div>
+
+		<script src="scripts/main.ts" type="module"></script>
+	</body>
+</html>

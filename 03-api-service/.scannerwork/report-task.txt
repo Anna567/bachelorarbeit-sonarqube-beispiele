@@ -1,0 +1,6 @@
+projectKey=hello_TypeScript
+serverUrl=http://localhost:9000
+serverVersion=25.1.0.102122
+dashboardUrl=http://localhost:9000/dashboard?id=hello_TypeScript
+ceTaskId=7923a618-7b2c-4242-b7c4-53256b3099ce
+ceTaskUrl=http://localhost:9000/api/ce/task?id=7923a618-7b2c-4242-b7c4-53256b3099ce

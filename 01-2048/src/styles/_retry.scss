@@ -1,0 +1,17 @@
+@use 'sass:color';
+
+.retry {
+	font-family: inherit;
+	font-size: 1.125rem;
+	line-height: 1;
+	color: #f9f6f2;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: block;
+	padding: 0.8rem 1.25rem 0.7rem;
+	border: 0;
+	background: color.adjust(#bbada0, $lightness: -20%);
+	border-radius: 0.25rem;
+	box-shadow: none;
+	appearance: none;
+}
