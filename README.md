@@ -1,4 +1,4 @@
-# bachelorarbeit-sonarqube-beispielealuation
+# bachelorarbeit-sonarqube-beispiele
 (Fremde) Beispielprojekte in TypeScript zur Evaluierung von SonarQube im Rahmen meiner Bachelorarbeit
 
 # Bachelorarbeit: SonarQube in TypeScript-Projekten
