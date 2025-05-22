@@ -7,6 +7,7 @@ export interface Directions {
   x: number[];
   y: number[];
 }
+//test
 
 export interface LastPosition {
   last: Position;

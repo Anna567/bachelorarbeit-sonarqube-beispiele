@@ -1,4 +1,5 @@
 {
-    "sonarQubeUri": "http://localhost:9000",
-    "projectKey": "Game2048"
+   "sonarCloudOrganization": "anna567",
+  "projectKey": "Anna567_bachelorarbeit-sonarqube-beispiele",
+  "region": "EU"
 }
