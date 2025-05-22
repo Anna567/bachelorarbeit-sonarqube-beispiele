@@ -22,9 +22,14 @@ jobs:
         with:
           node-version: '18'
 
-      - run: npm ci
+      - run: npm install --workspaces=false || true
 
       - name: Run SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v2
+        with:
+          args: >
+            -Dsonar.sources=01-2048,02-dashboard,03-api-service
+            -Dsonar.organization=anna567
+            -Dsonar.projectKey=Anna567_bachelorarbeit-sonarqube-beispiele
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
