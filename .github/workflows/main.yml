@@ -25,7 +25,10 @@ jobs:
       - run: npm install --workspaces=false || true
 
       - name: Run tests with coverage
-        run: npm test -- --coverage
+        run: |
+          cd 01-2048
+          npm install
+          npm test -- --coverage
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v2
