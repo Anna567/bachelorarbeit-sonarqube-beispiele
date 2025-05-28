@@ -15,7 +15,7 @@
 		"jsx": "react",
 		"lib": ["dom", "ESNext"],
 		"target": "ESNext",
-		"module": "ESNext",
+		"module": "commonjs",
 		"moduleResolution": "node",
 		"noEmit": false,
 		"noEmitOnError": true,
