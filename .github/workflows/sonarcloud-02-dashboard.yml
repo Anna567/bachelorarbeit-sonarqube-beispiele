@@ -1,0 +1,42 @@
+name: SonarCloud Scan for 02-dashboard
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '02-dashboard/**'
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - '02-dashboard/**'
+
+jobs:
+  sonarcloud:
+    name: SonarCloud
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: 02-dashboard
+
+      - name: Build project
+        run: npm run build
+        working-directory: 02-dashboard
+
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@v2
+        with:
+          projectBaseDir: 02-dashboard
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_PROJECT_KEY: anna567_02-dashboard
+          SONAR_ORGANIZATION: annaasc
